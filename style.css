@@ -1,0 +1,230 @@
+body
+{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFD700;
+  color: white;
+  padding: 0;
+  margin:0;
+}
+
+/* Barre de navigation */
+nav
+{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	position:fixed;
+	top:0;
+	width: 100%;
+	background-color: black;
+	padding: 10px 20px;
+}
+nav .onglets{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	color: white;
+	text-decoration: none !important;
+}
+nav .onglets a{
+	margin-right: 20px;
+	cursor:pointer;
+	text-decoration: none;
+	color: white;
+}
+{
+	text-decoration: none;
+
+}
+
+/* Fin de la barre de navigation */
+
+/*Partie Header */
+header{
+	background:url("images/pear-1459382_1280.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px 350px;
+    border-bottom: 90px solid;
+    border-bottom-color: #FFD700;
+   
+}
+
+header h1{
+	  transform: translateY(250px);
+    font-size: 60px;
+	  text-align:center ;
+	  vertical-align: text-bottom;
+	  line-height: 400px;
+	  color: black;
+	  font-family: "Carter One", system-ui;
+	  text-decoration: underline;
+	  text-decoration-thickness: 6px;
+
+
+
+#image{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -100px;
+	cursor: pointer;
+}
+
+
+}
+/* Fin de la partie Header */
+
+/* cou de page */
+#section1{
+	background-color: #303030;
+	padding: 25px 100px;
+	font-size: 50px;
+	
+}
+
+#section1 .colonnes{
+	font-size: 25px;
+	
+}
+/* fin de cou de page */	
+
+/* corps de page */
+
+#section2{
+	font-size: 25px;
+	color: black;
+	background-color: #FFD700;
+	padding: 25px 100px;
+}
+
+/* fin de corps de page */
+
+/* pied de page */
+#section3{
+	font-size: 25Px;
+	color: white;
+	background-color: #303030;
+	padding: 25px 100px;
+}
+
+/* fin de pied de page */
+
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 60%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+    background-color: yellow;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 640px){
+	body .page{
+		margin: 5px ;
+	}
+	body #section1{
+		font-size: 20px;
+		padding: 1px 1px;
+		margin: 1px 1px;
+		background-color: black;
+	}
+	body #section1 .colonnes{
+		font-size: 15px;
+		padding: 1px 1px;
+		margin: 1px 1px;
+		word-spacing: 1.5px;
+		background-color: black;
+	}
+	body #section2{
+		font-size: 15px;
+		padding: 1px 1px;
+		margin: 1px 1px;
+		word-spacing: 1.5px;
+    }
+    body #section3{
+		font-size: 15px;
+		padding: 1px 1px;
+		margin: 1px 1px;
+		word-spacing: 1.5px;
+	}
+	nav .onglets{
+		display: none;
+	}
+	nav{
+		display: none;
+		padding: 0px 0px;
+	}
+	header{
+		margin-top: 5px;
+		background-size: 210px 210px;
+		border-bottom: 0px solid;
+		transform: translateY(-150px);
+		height: 450Px;
+		background-position-y: 210px;
+
+
+	}
+	header h1{
+		line-height: 290px;
+		transform: translateY(20px);
+		vertical-align: top;
+		height: 350px;
+		padding-top: 130px;
+	}
+	header .medias{
+          list-style-type: none;
+          position: absolute;
+          right: 3.3%;
+          top: 70%;
+          transform: translateY(-50%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+}
+    header .bulle{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #f1f1f1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 30px 0;
+          background: #f1f1f1;
+          cursor: pointer;
+          position: relative;
+          background-color: yellow;
+
+	}
+	header h1{
+		font-size: 30px;
+		padding: 5px;
+		transform: translateY(20px);
+	}
+}
